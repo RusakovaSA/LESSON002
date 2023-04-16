@@ -4,16 +4,27 @@
 // 25, 5  ->  да
 // 8,9  ->  нет
 
+// Console.WriteLine("Введите число 1: ");
+// int a = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите число 2: ");
+// int b = int.Parse(Console.ReadLine());
+
+// if (a  == Math.Pow(b, 2) || b  == Math.Pow(a, 2) )
+// {
+//     Console.WriteLine("Одно число является квадратом другого числа" );
+// }
+// else
+// {
+//     Console.WriteLine("Одно число не является квадратом другого числа");
+// }
+
 Console.WriteLine("Введите число 1: ");
 int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число 2: ");
 int b = int.Parse(Console.ReadLine());
 
-if (a  == Math.Pow(b, 2) || b  == Math.Pow(a, 2) )
+bool OutputKratnoLi(int a)
 {
-    Console.WriteLine("Одно число является квадратом другого числа" );
+    return a == Math.Pow(b, 2) || b == Math.Pow(a, 2);
 }
-else
-{
-    Console.WriteLine("Одно число не является квадратом другого числа");
-}
+Console.WriteLine(OutputKratnoLi(a));
