@@ -18,12 +18,13 @@ else
 }
 
 
+// Вариант кода через функцию
 
 // int a = int.Parse(Console.ReadLine());
 
-// bool OutputKratnoLi(int a)
+// bool OutputKratnoLi(int b)
 // {
-//     if ((a % 7 == 0) && (a % 23 == 0))
+//     if ((b % 7 == 0) && (b % 23 == 0))
 //     {
 //         return true;
 //     }
